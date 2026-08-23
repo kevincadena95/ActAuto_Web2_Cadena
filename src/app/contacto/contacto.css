@@ -1,0 +1,85 @@
+.pagina {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.pagina > h2 {
+    color: #0a192f;
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+.pagina > h2:first-child {
+    margin-bottom: 5px;
+}
+
+.pagina > h2:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contenedorFormulario {
+    width: 550px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 #0a192f;
+}
+
+.contenedorFormulario form {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 15px;
+}
+
+.contenedorFormulario label {
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorFormulario input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.contenedorFormulario input:focus {
+    border: 2px solid #0a192f;
+}
+
+.contenedorFormulario .error {
+    grid-column: 1 / 3;
+    text-align: center;
+    color: #0a192f;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 140px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contenedorFormulario button {
+    grid-column: 1 / 3;
+    width: 160px;
+    margin: 10px auto 0;
+    padding: 10px;
+    background-color: #0a192f;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenedorFormulario button:hover {
+    background-color: #050c17;
+}

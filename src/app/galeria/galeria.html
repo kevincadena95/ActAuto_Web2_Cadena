@@ -1,0 +1,20 @@
+<h2 class="titulo">NUESTRAS OBRAS</h2>
+
+<div class="contenedorProductos">
+
+    @for (producto of productos(); track producto.id) {
+
+    <div class="producto">
+        <div class="contenedorImagen">
+            <img [src]="producto.images?.web?.url" [alt]="producto.title" class="imagenProducto">
+        </div>
+
+        <div class="informacionProducto">
+            <h2>{{ producto.title }}</h2>
+            <p class="categoria">{{ producto.creators?.[0]?.description }}</p>
+        </div>
+    </div>
+
+    }
+
+</div>

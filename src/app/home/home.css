@@ -1,0 +1,129 @@
+.home {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.heroGaleria {
+    max-width: 1350px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.bloquePrincipal,
+.bloqueSecundario img {
+    border-radius: 16px;
+}
+
+.bloquePrincipal {
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloquePrincipal img,
+.bloqueSecundario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlayPrincipal {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.05));
+}
+
+.contenidoPrincipal {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 35px;
+    color: white;
+}
+
+.contenidoPrincipal h1 {
+    max-width: 650px;
+    margin: 0 0 15px;
+    font-size: 50px;
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+.contenidoPrincipal p {
+    max-width: 650px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contenidoPrincipal a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bloquesSecundarios {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.bloqueSecundario {
+    min-height: 290px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.bloqueSecundario img {
+    min-height: 290px;
+}
+
+.contenidoSecundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.contenidoSecundario span {
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #222;
+    letter-spacing: .3px;
+}
+
+.contenidoSecundario h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: #171717;
+}
+
+.contenidoSecundario p {
+    margin: 0 0 14px;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #333;
+}
+
+.contenidoSecundario a {
+    color: #111;
+    font-size: 15px;
+}
+
+.contenidoPrincipal a,
+.contenidoSecundario a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.contenidoPrincipal a:hover,
+.contenidoSecundario a:hover {
+    opacity: .65;
+}

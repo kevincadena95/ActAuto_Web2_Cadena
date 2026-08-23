@@ -1,0 +1,45 @@
+.footer {
+    background: #0a192f; 
+    color: white;
+    padding: 1.5rem 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nombre-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nombre-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.nombre-logo h1 {
+    margin-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footerInfo {
+    text-align: right;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footerInfo p {
+    margin: 3px 0;
+}

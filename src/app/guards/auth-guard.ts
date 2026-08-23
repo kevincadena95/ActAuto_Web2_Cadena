@@ -1,0 +1,15 @@
+import { inject } from '@angular/core';
+import { CanActivateFn, Router } from '@angular/router';
+
+export const authGuard: CanActivateFn = (route, state) => {
+  const router = inject(Router);
+  const isValiado = localStorage.getItem('userAuth') !== null;
+
+  if (isValiado) {
+    return true;
+  } else {
+    alert("Para acceder a 'Galeria' debes iniciar sesión");
+    router.navigate(['login']);
+    return false;
+  }
+};

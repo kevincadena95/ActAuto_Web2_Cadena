@@ -1,0 +1,72 @@
+.paginaLogin {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contenedorLogin {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 #0a192f;
+}
+
+.contenedorLogin h2 {
+    text-align: center;
+    color: #0a192f;
+    margin-bottom: 30px;
+}
+
+.contenedorLogin form {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 15px;
+}
+
+.contenedorLogin label {
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorLogin input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+}
+
+.contenedorLogin input:focus {
+    border: 2px solid #0a192f;
+}
+
+.contenedorLogin .error {
+    grid-column: 1 / 3;
+    text-align: center;
+    color: #0a192f;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contenedorLogin button {
+    grid-column: 1 / 3;
+    width: 160px;
+    margin: 10px auto 0;
+    padding: 10px;
+    background-color: #0a192f;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenedorLogin button:hover {
+    background-color: #050c17;
+}
